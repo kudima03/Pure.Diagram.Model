@@ -15,6 +15,6 @@
     <PackageProjectUrl>https://github.com/kudima03/Pure.Diagram.Model</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Pure.Diagram.Model.Abstractions" Version="0.1.0-preview.0.1.0" />
+    <PackageReference Include="Pure.Diagram.Model.Abstractions" Version="0.1.0-preview.1.0.0" />
   </ItemGroup>
 </Project>
