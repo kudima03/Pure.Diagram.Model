@@ -4,14 +4,14 @@ using Pure.Primitives.Random.String;
 
 namespace Pure.Diagram.Model.Tests;
 
-public sealed record SeriesTests
+public sealed record DiagramSeriesTests
 {
     [Fact]
     public void InitializeLabelCorrectly()
     {
         IString label = new RandomString();
 
-        ISeries series = new Series(label, new RandomString());
+        IDiagramSeries series = new DiagramSeries(label, new RandomString());
 
         Assert.Equal(label.TextValue, series.Label.TextValue);
     }
@@ -21,7 +21,7 @@ public sealed record SeriesTests
     {
         IString source = new RandomString();
 
-        ISeries series = new Series(new RandomString(), source);
+        IDiagramSeries series = new DiagramSeries(new RandomString(), source);
 
         Assert.Equal(source.TextValue, series.Source.TextValue);
     }

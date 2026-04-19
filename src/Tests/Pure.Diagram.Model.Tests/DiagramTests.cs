@@ -16,8 +16,8 @@ public sealed record DiagramTests
             new RandomString(),
             new DiagramType(new RandomString()),
             [
-                new Series(new RandomString(), new RandomString()),
-                new Series(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
             ]
         );
 
@@ -34,8 +34,8 @@ public sealed record DiagramTests
             description,
             new DiagramType(new RandomString()),
             [
-                new Series(new RandomString(), new RandomString()),
-                new Series(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
             ]
         );
 
@@ -52,8 +52,8 @@ public sealed record DiagramTests
             new RandomString(),
             type,
             [
-                new Series(new RandomString(), new RandomString()),
-                new Series(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
+                new DiagramSeries(new RandomString(), new RandomString()),
             ]
         );
 
@@ -63,10 +63,10 @@ public sealed record DiagramTests
     [Fact]
     public void InitializeSeriesCorrectly()
     {
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new Series(new RandomString(), new RandomString()),
-            new Series(new RandomString(), new RandomString()),
+            new DiagramSeries(new RandomString(), new RandomString()),
+            new DiagramSeries(new RandomString(), new RandomString()),
         ];
 
         IDiagram diagram = new Diagram(

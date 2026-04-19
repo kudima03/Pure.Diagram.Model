@@ -9,7 +9,7 @@ public sealed record Diagram : IDiagram
         IString title,
         IString description,
         IDiagramType type,
-        IEnumerable<ISeries> series
+        IEnumerable<IDiagramSeries> series
     )
     {
         Title = title;
@@ -24,5 +24,5 @@ public sealed record Diagram : IDiagram
 
     public IDiagramType Type { get; }
 
-    public IEnumerable<ISeries> Series { get; }
+    public IEnumerable<IDiagramSeries> Series { get; }
 }
