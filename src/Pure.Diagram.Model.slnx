@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Pure.Diagram.Model.Tests/Pure.Diagram.Model.Tests.csproj" />
+  </Folder>
+  <Project Path="Pure.Diagram.Model/Pure.Diagram.Model.csproj" />
+</Solution>
