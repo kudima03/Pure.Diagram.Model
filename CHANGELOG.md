@@ -6,7 +6,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [Unreleased]
+## [0.1.0-preview.1.1.0] — 2026-10-23
 
 ### Added
 
@@ -19,6 +19,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - **`FunnelDiagramType`** — `funnel`.
   - **`TreemapDiagramType`** — `treemap`.
 - Dependency on `Pure.Primitives` `3.7.0` for the fixed names.
+- `README.md` is now packed into the NuGet package.
+
+### Changed
+
+- The assembly version is now derived from the release tag's major
+  version (`0.0.0.0` for `0.x` releases) instead of the SDK default
+  `1.0.0.0`; the file version is the tag's numeric part.
 
 ## [0.1.0-preview.1.0.0] — 2026-04-19
 
