@@ -6,6 +6,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- Predefined diagram types — parameterless sealed records implementing
+  `IDiagramType` with a fixed lowercase `Name`, giving consumers a
+  closed set of known diagram type names:
+  - **`PieDiagramType`** — `pie`.
+  - **`DonutDiagramType`** — `donut`.
+  - **`RoseDiagramType`** — `rose`.
+  - **`FunnelDiagramType`** — `funnel`.
+  - **`TreemapDiagramType`** — `treemap`.
+- Dependency on `Pure.Primitives` `3.7.0` for the fixed names.
+
 ## [0.1.0-preview.1.0.0] — 2026-04-19
 
 ### Changed
