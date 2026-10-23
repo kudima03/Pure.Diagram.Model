@@ -17,9 +17,26 @@ Concrete implementations of the diagram domain model for the **Pure** ecosystem 
 |------|-----------|-------------|
 | `Diagram` | `IDiagram` | Root diagram record — holds title, description, type, and a series collection |
 | `DiagramSeries` | `IDiagramSeries` | A data series with a label and source column binding |
-| `DiagramType` | `IDiagramType` | Named diagram type (e.g. flow, sequence, class) |
+| `DiagramType` | `IDiagramType` | Named diagram type with an arbitrary name |
+| `PieDiagramType` | `IDiagramType` | Predefined `pie` diagram type |
+| `DonutDiagramType` | `IDiagramType` | Predefined `donut` diagram type |
+| `RoseDiagramType` | `IDiagramType` | Predefined `rose` diagram type |
+| `FunnelDiagramType` | `IDiagramType` | Predefined `funnel` diagram type |
+| `TreemapDiagramType` | `IDiagramType` | Predefined `treemap` diagram type |
 
 All types reside in the `Pure.Diagram.Model` namespace.
+
+### Predefined diagram types
+
+The predefined diagram types are parameterless records with a fixed lowercase `Name`, so consumers can rely on a known, closed set of names instead of free-form strings. Each one presents a diagram's series as one segment per labelled value:
+
+| Type | `Name` | Shape |
+|------|--------|-------|
+| `PieDiagramType` | `pie` | Pie |
+| `DonutDiagramType` | `donut` | Pie with a hollow centre |
+| `RoseDiagramType` | `rose` | Nightingale rose — segment radius proportional to the value |
+| `FunnelDiagramType` | `funnel` | Funnel |
+| `TreemapDiagramType` | `treemap` | Flat treemap |
 
 ## Design Principles
 
@@ -31,3 +48,4 @@ All types reside in the `Pure.Diagram.Model` namespace.
 
 - [`Pure.Diagram.Model.Abstractions`](https://github.com/kudima03/Pure.Diagram.Model.Abstractions) — diagram domain interfaces
 - [`Pure.Primitives.Abstractions`](https://github.com/kudima03/Pure.Primitives.Abstractions) — `IString` interface
+- [`Pure.Primitives`](https://github.com/kudima03/Pure.Primitives) — `String`, used for the fixed names of the predefined diagram types
