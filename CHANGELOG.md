@@ -6,6 +6,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.1.0-preview.1.2.0] — 2026-11-11
+
+### Added
+
+- .NET 11 (`net11.0`) added as a target framework alongside `net7.0`,
+  `net8.0`, `net9.0` and `net10.0`.
+
+### Changed
+
+- Dependency on `Pure.Diagram.Model.Abstractions` bumped to
+  `0.1.0-preview.1.1.0`.
+- Dependency on `Pure.Primitives` bumped to `3.8.0`.
+- Tests and CI now run on the .NET 11 SDK.
+
 ## [0.1.0-preview.1.1.0] — 2026-10-23
 
 ### Added
